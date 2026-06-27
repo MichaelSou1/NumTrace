@@ -1,0 +1,44 @@
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime artifacts
+data/**
+!data/.gitkeep
+!data/distill/
+!data/distill/.gitkeep
+!data/distill/poc/
+!data/distill/poc/.gitkeep
+!data/distill/results/
+!data/distill/results/.gitkeep
+logs/**
+!logs/.gitkeep
+
+# Models and adapters
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+wandb/
+
+# Generated paper/build outputs
+docs/paper/*.aux
+docs/paper/*.bbl
+docs/paper/*.blg
+docs/paper/*.log
+docs/paper/*.out
+docs/paper/*.pdf
+
+.DS_Store
+Thumbs.db
